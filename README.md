@@ -23,7 +23,7 @@ $ git clone https://github.com/divishadL/edge_detection_ros.git
 $ cd ..
 $ catkin_make
 $ source/devel/setup.bash
-
+```
 
 ## Running the Nodes
 
@@ -33,7 +33,7 @@ Launch the server node by running:
 
 ```bash
 rosrun edge_detection edge_detector.py
-
+```
 This will start the server node, which performs edge detection and generates point clouds.
 
 ### Client Node (Edge Detection Request)
@@ -42,7 +42,7 @@ Launch the client node by running:
 
 ```bash
 rosrun edge_detection edge_detection_client.py 
-
+```
 This will start the client node, which captures images from the camera and requests edge detection from the server.
 
 ## Results
