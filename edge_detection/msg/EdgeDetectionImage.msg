@@ -1,0 +1,2 @@
+string image_path
+sensor_msgs/Image image
