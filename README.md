@@ -8,16 +8,15 @@ The provided code consists of two ROS nodes: a server node for edge detection an
 
 ## Prerequisites
 
-- ROS Kinetic or later version installed.
-- Appropriate ROS camera drivers and topics set up.
-- Python 2.7 or 3.x installed.
-- OpenCV, NumPy, and cv_bridge libraries installed.
+- ROS Noetic.
+- Python 3.x
+- OpenCV, NumPy, and cv_bridge libraries. If already not installed, can be installed with ```sudo apt-get install ros-noetic-cv-bridge
 
 ## Installation
 
 ### Clone the repository into your ROS workspace and Build the ROS packages:
-
-```$ mkdir -p ~/catkin_ws/src
+````
+$ mkdir -p ~/catkin_ws/src
 $ git clone https://github.com/divishadL/edge_detection_ros.git
 $ cd ..
 $ catkin_make
