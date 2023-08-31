@@ -10,12 +10,14 @@ The provided code consists of two ROS nodes: a server node for edge detection an
 
 - ROS Noetic.
 - Python 3.x
-- OpenCV, NumPy, and cv_bridge libraries. If already not installed, can be installed with ```sudo apt-get install ros-noetic-cv-bridge
+- OpenCV, NumPy, and cv_bridge libraries. If already not installed, can be installed with
+  ```bash
+  sudo apt-get install ros-noetic-cv-bridge
 
 ## Installation
 
 ### Clone the repository into your ROS workspace and Build the ROS packages:
-````
+```bash
 $ mkdir -p ~/catkin_ws/src
 $ git clone https://github.com/divishadL/edge_detection_ros.git
 $ cd ..
@@ -29,7 +31,8 @@ $ source/devel/setup.bash
 
 Launch the server node by running:
 
-```rosrun edge_detection edge_detector.py
+```bash
+rosrun edge_detection edge_detector.py
 
 This will start the server node, which performs edge detection and generates point clouds.
 
@@ -37,7 +40,8 @@ This will start the server node, which performs edge detection and generates poi
 
 Launch the client node by running:
 
-```rosrun edge_detection edge_detection_client.py 
+```bash
+rosrun edge_detection edge_detection_client.py 
 
 This will start the client node, which captures images from the camera and requests edge detection from the server.
 
